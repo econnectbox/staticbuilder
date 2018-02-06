@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.econnectbox</groupId>
+	<artifactId>staticbuilder</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>Static Builder</name>
+	<description>Static builder is a project for join and compress javascritp and css files</description>
+	<url>https://github.com/econnectbox/staticbuilder</url>
+
+	<organization>
+		<name>Econnect Box</name>
+		<url>http://econnectbox.com/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>Javier Perez</name>
+			<email>javier.perez@econnectbox.com</email>
+			<organization>Econnectbox BOX</organization>
+			<organizationUrl>http://econnectbox.com/</organizationUrl>
+		</developer>
+	</developers>
+
+	<properties>
+		<java-version>1.6</java-version>
+	</properties>
+	<build>
+		<finalName>static-builder</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.5.1</version>
+					<configuration>
+						<source>${java-version}</source>
+						<target>${java-version}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
